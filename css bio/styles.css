@@ -1,0 +1,421 @@
+/* 
+Author: Nadia Gainer 
+Date:11/28/23 
+File name: biosite styles.css 
+*/ 
+
+CSS Reset 
+
+body,header,nav,main,footer,img,h1,h3,ul,aside,figure,figcaption { 
+
+margin: 0; 
+
+padding: 0; 
+
+border: 0; 
+
+  } 
+
+  
+
+  /*Style rules for body and images*/ 
+
+body { 
+
+background-color: #E74C3C 
+
+} 
+
+  
+
+img { 
+
+max-width:100%; 
+
+display: block; 
+
+} 
+
+  
+
+/*Style rules for header area*/ 
+
+  h1,h3 { 
+
+    padding: 2%; 
+
+    text-align: center; 
+
+  } 
+
+  
+
+/*Style rules for navigation area*/ 
+
+nav { 
+
+    width: 10%; 
+
+background-color:#2C3539; 
+
+    float: right; 
+
+} 
+
+  
+
+nav ul { 
+
+list-style-type: none; 
+
+text-align: center; 
+
+    padding: 0px; 
+
+    margin: 0 px; 
+
+} 
+
+  
+
+nav li { 
+
+display: block; 
+
+    border-top: 0.5px #FDD835; 
+
+font-size: 1.5em; 
+
+font-family: Geneva,Arial,sans-serif; 
+
+} 
+
+   
+
+  	nav li a { 
+
+display: block; 
+
+color: #EBF4FA; 
+
+padding-top: 0.5em; 
+
+    padding-bottom: 0.5em; 
+
+padding-left: 2em; 
+
+padding-right: 2em; 
+
+text-decoration: none; 
+
+    } 
+
+     
+
+  
+
+  /*Style rules for main content*/ 
+
+  main { 
+
+padding: 2%; 
+
+font-family: 'Lora',Verdana,Arial,sans-serif; 
+
+} 
+
+  
+
+main p { 
+
+font-size: 1.25em; 
+
+    text-align: left; 
+
+} 
+
+  
+
+main h3 { 
+
+padding-top: 2%; 
+
+} 
+
+  
+
+main ul { 
+
+list-style: square; 
+
+} 
+
+   
+
+.link { 
+
+text-decoration: none; 
+
+color: #4d3319; 
+
+font-weight: bold; 
+
+font-style: italic; 
+
+} 
+
+  
+
+.action { 
+
+font-size: 1.75em; 
+
+font-weight: bold; 
+
+text-align: center; 
+
+} 
+
+  
+
+#contact { 
+
+  text-align: center; 
+
+} 
+
+  
+
+/*Media Query for Tablet viewport*/ 
+
+  @media screen and (min-width:620px), print { 
+
+  /*Tablet Viewport: Show tab-desk class, hide mobile class*/ 
+
+  .tab-desk { 
+
+    display: block; 
+
+     
+
+  } 
+
+  .mobile { 
+
+    display: none; 
+
+  } 
+
+  
+
+  /* Tablet Viewport: Style rules for nav area */ 
+
+  nav li { 
+
+    border-top: none; 
+
+    display: inline-block; 
+
+    font-size: 1.25em; 
+
+  } 
+
+  
+
+  nav li a { 
+
+    padding: 0.5em; 
+
+  } 
+
+  
+
+  .grid { 
+
+    display: grid; 
+
+    grid-template-columns: auto auto; 
+
+    grid-gap: 10px; 
+
+  } 
+
+   
+
+  } 
+
+aside { 
+
+    grid-column: 1 / span 2; 
+
+  } 
+
+   
+
+  
+
+/*Media Query for Desktop viewport*/ 
+
+  @media screen and (min-width: 1000px), print { 
+
+  
+
+  /*Desktop Viewport: Style rules for nav area*/ 
+
+  nav li { 
+
+    font-size: 1.5em; 
+
+  } 
+
+  
+
+  nav li a { 
+
+    padding: 0.5em 1.5em; 
+
+  } 
+
+  
+
+  nav li a:hover { 
+
+    color: #EBF4FA; 
+
+    background-color: #2C3539; 
+
+    opacity: 0.5; 
+
+  } 
+
+   
+
+  } 
+
+   
+
+   /*Desktop Viewport: Style rules for main content*/ 
+
+  #info ul { 
+
+    margin-left: 5%; 
+
+  } 
+
+   
+
+  .grid { 
+
+    grid-template-columns: auto auto; 
+
+    grid-gap: 30px; 
+
+  } 
+
+   
+
+  .desktop { 
+
+    display:block; 
+
+  } 
+
+   
+
+  .mobile-tablet { 
+
+    display:none; 
+
+  } 
+
+   
+
+  aside { 
+
+    grid-column: 1 / span 2; 
+
+    font-size: 2em; 
+
+  } 
+
+   
+
+  } 
+
+   
+
+  /*Media Query for Large Desktop View ports*/ 
+
+  @media screen and (min-width: 1921px) { 
+
+  
+
+  body { 
+
+    background: linear-gradient(#f6eee4, #78593a); 
+
+  } 
+
+  
+
+  #wrapper { 
+
+    width: 1920px; 
+
+    margin: 0 auto; 
+
+  } 
+
+  
+
+  main { 
+
+    background-color: #f6eee4; 
+
+  } 
+
+   
+
+  .grid { 
+
+    grid-template-columns: auto auto; 
+
+  } 
+
+   
+
+  aside {  
+
+  grid-column: 1 / span 2; 
+
+  font-size: 3em; 
+
+  } 
+
+   
+
+  } 
+
+  
+
+  /*Media Query for Print*/ 
+
+  @media print { 
+
+  
+
+    body { 
+
+    background-color: #fff; 
+
+    color: #000; 
+
+  } 
+
+   
+
+  } 
+
+   
+
+   
