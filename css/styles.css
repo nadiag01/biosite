@@ -31,7 +31,9 @@ display: block;
 /*Style rules for navigation area*/ 
 
   nav { 
-    background-color:#2C3539;  
+    background-color:#2C3539;
+  padding: 1%;
+  margin-bottom: 1%;    
   } 
 
   nav ul { 
@@ -42,10 +44,11 @@ display: block;
   } 
 
   nav li { 
-    display: inline-block; 
+    display: block; 
     border-top: 0.5px #FDD835; 
     font-size: 1.5em; 
-    font-family: Geneva,Arial,sans-serif; 
+    font-family: Verda,Arial,sans-serif; 
+    text-align: center;
   } 
 
   nav li a { 
@@ -56,13 +59,6 @@ display: block;
     padding: 25px 20px;
     } 
 
-/*Style rules for header area*/ 
-
-  h1,h3 { 
-    padding: 2%; 
-    text-align: center; 
-  } 
-
   /*Style rules for main content*/ 
 
   main { 
@@ -71,7 +67,7 @@ display: block;
   } 
 
   main p { 
-    font-size: 1.25em; 
+    font-size: 1.35em; 
     text-align: left; 
   } 
 
@@ -100,8 +96,78 @@ display: block;
     text-align: center; 
   } 
 
-  
+  .wrapper {
+    width:50%;
+    margin: 0;
+  }
 
+  .wrapper2 {
+  width: 65%;
+  float: right;
+}
+
+
+  .indexpics {
+  float: right;
+  margin: 1%;
+  padding: 4% 0;
+}
+
+  .aboutpic {
+    float: left;
+    margin-left: 25px;
+    margin-bottom:100px;
+    padding-right:25px;
+  }
+  
+   #places {
+    text-align: center;
+  }
+  
+  ul {
+    text-align: center;
+  }
+  
+  li { 
+    list-style-type: none;
+    font-size:1.75em;
+  }
+
+/*Figcaptions for Hobby Page*/
+
+figure {
+    border: 4px solid #2a1f14;
+    box-shadow: 6px 6px 10px #c5a687;
+    max-width: 400px;
+    margin: 2% auto;
+  }
+
+  figcaption {
+    padding: 2%;
+    border-top: 4px solid #2a1f14;
+  }
+  
+  /*Style rules for mobile viewport*/
+  
+  
+  
+  /*Style rules to show mobile class hide tab-desk class*/
+
+  .mobile {
+    display: block;
+ }
+ 
+  .tab-desk {
+    display:none;
+  }
+  
+  /*Styles rules for Header area*/
+
+  h1,h3 {
+    text-align:center;
+    padding: 2%;
+  }
+  
 /*Media Query for Tablet viewport*/ 
 
   @media screen and (min-width:620px), print { 
@@ -130,13 +196,6 @@ display: block;
     padding: 0.5em; 
   } 
 
-  .grid { 
-    display: grid; 
-
-    grid-template-columns: auto auto; 
-
-    grid-gap: 10px; 
-  } 
 
   } 
 
@@ -165,6 +224,20 @@ display: block;
   } 
 
   } 
+  
+  /*Style rules for footer content*/
+  footer {
+    position:fixed; /*html code not covered in textbook*/
+    left:0px;
+    bottom:0px;
+    height:30px;
+    width:100%;
+    background:#2C3539;
+    text-align: center;
+    padding: 1% 1%;
+    color: #B2BABB;
+    text-decoration: none;
+	}
 
    /*Desktop Viewport: Style rules for main content*/ 
 
